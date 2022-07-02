@@ -1,0 +1,184 @@
+@charset "utf-8";
+:root{
+        /* Cores da paleta do Site */
+        --cor0:#aa9ef5a3;
+        --cor1:#695bfd;
+        --cor2:#133df8;
+        --cor3:#0522a7;
+        --cor4:#021566;
+        --cor5:#020c3c;
+        /*Fontes do Site */
+        --fonte-padrao: :''Courier, monospace;
+        --fonte-pacifico: 'Pacifico', cursive;
+        --fonte-poppins: 'Poppins', monospace;
+        margin: 20px;
+        
+    }
+body {
+    background-color: var(--cor0);
+    }
+header{
+        background-image: linear-gradient( to right, var(--cor4),  transparent);  
+        text-align: center;
+        font-size:calc(0.55em +  1vw);
+        padding: 0;
+        margin: auto;
+       
+        border-radius: 25px 25px;
+        text-shadow: 4px 2px 4px #020c3c49;              
+    }
+header h1{
+        font-family: var(--fonte-poppins);
+        font-size: clamp(0.98rem, 2.3vw, 2.5rem);
+        font-weight: bold;
+        color: white;
+        -webkit-text-stroke: 0.4px rgb(4, 141, 153) ;
+        text-align: center;
+        text-shadow:2px 3px 5px rgba(0, 0, 0, 0.431) ;    
+}
+header p{
+    font-family: var(--fonte-poppins);
+    font-size: clamp(0.8rem, 1.5vw, 1.9rem);
+    text-align: center;
+    text-indent: 1em;
+    color: white;
+
+}
+header p.facu{
+    font-family: var(--fonte-poppins);
+    font-size: clamp(0.9rem, 1.5vw, 1.9rem);
+    text-align: center;
+    color: white;
+    text-shadow: .8px .8px 1px rgba(0, 0, 0, 0.62);
+
+}
+picture > img {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    max-height: 250px;
+    max-width: 150px;
+
+}
+ul
+{
+    font-family: var(--fonte-padrao);
+    font-size: clamp(0.7rem, 1vw, 1.3rem);
+    color: black;
+    text-shadow: 2px 1px var(--cor1);
+    padding:10px;
+    margin: auto;
+    font-weight: bold;
+}
+ul:hover{
+    background-color:var(--cor0);
+}
+.externo::after{
+    content: '🔗' 
+}
+article h2.qualificacao {
+    font-family: var(--fonte-poppins);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    font-weight: bolder;
+    margin-top: 30px;
+    color: var(--cor5);
+    -webkit-text-stroke: 0.4px rgb(4, 141, 153);
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+article h2.conhecimento {
+    font-family: var(--fonte-poppins);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    font-weight: bolder;
+    margin: auto;
+    color: var(--cor5);
+    -webkit-text-stroke: 0.4px rgb(4, 141, 153) ;
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+article h2.experiencia{
+    font-family: var(--fonte-poppins);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    font-weight: bolder;
+    margin: auto;
+    color: var(--cor5);
+    -webkit-text-stroke: 0.4px rgb(4, 141, 153) ;
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+article p{
+    font-family: var(--fonte-padrao);
+    font-size: calc( 1em + 1wv)
+    font-weight: normal;
+    text-indent: 18px;
+    margin: auto;
+    color: var(--cor5);
+    padding: 10px;
+}
+article p.empresa{
+    font-family: var(--fonte-poppins);
+    font-size: clamp(1rem, 1.3vw, 1.5rem);
+    font-weight: bolder;
+    color: var(--cor4);
+    margin: auto;
+    padding: 10px;
+}
+article p.data{
+    font-family: var(--fonte-poppins);
+    font-size: clamp(0.6rem, 1.3vw, 1.6rem);
+    font-weight: normal;
+    color: var(--cor4);
+    margin: auto;
+    padding: 10px;
+}
+article p.cargo{
+    font-family: var(--fonte-poppins);
+    font-size: clamp(1rem, 1.3vw, 1.5rem); 
+    font-weight: bolder;
+    color: var(--cor4);
+    margin: auto;
+    padding: 10px;
+}
+article #conhecimento {
+    font-family: var(--fonte-poppins);
+    font-size: clamp(0.8rem, 1.5vw, 1.9rem);
+    text-align: center;
+    color: var(--cor5);
+    -webkit-text-stroke: 0.4px rgb(4, 141, 153) ;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+.carrossel{
+    margin-right:  50%;
+    margin-top: 10px;
+    margin-left: 40%;
+    margin-bottom: 10px;
+    padding: top 05px;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 190px;
+    width: 190px;
+
+}
+.container{
+    display: flex;
+    transition: transform 10s ease-in-out;
+    transform: translateX(0);
+}
+img{
+        object-fit: cover;
+        height: 190px;
+        width: 190px;
+}
+
+footer {
+    font-family: var(--fonte-pacifico);
+    text-align: center;
+    font-size: clamp(0.6rem, 1.3vw, 1.8rem);
+    margin-bottom: 20px;
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    color: var(--cor5);
+    
+}
+
